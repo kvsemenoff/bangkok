@@ -1,4 +1,66 @@
-.container
+
+.header-top
+	.container
+		.row
+			.col-sm-12.col-md-6
+				.header-box.header-box_1
+					span OPEN: 12:00pm - 02:00am
+			.col-sm-12.col-md-6
+				.header-box.header-box_2
+					span 080-000-0000  
+					span +66 80-000-0000  
+
+			.clearfix
+
+.header-middle
+	.container
+		.row
+			.col-sm-12.col-md-4
+				.header-middle_box.header-middle_box__left
+					img(class="img-responsive" src="img/logo.png", alt="")
+			.col-sm-12.col-md-8
+				.header-middle_box.header-middle_box__right
+					- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
+					ul.main-menu
+						for item in menulist
+							li
+								a(href="#")=item
+			.clearfix
+
+.header-bottom
+	.container
+		#slider-header
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g1.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g2.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g1.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g2.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g1.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g2.jpg", alt="")
+			.item
+				.item-box
+					a(href="#")
+						img(src="img/g1.jpg", alt="")
+
+
+
 	.row
 		.col-sm-12.col-md-6
 			p текст
@@ -9,4 +71,5 @@ ul.main-menu
 	for item in menulist
 		li
 			a(href="#")=item
+
 
