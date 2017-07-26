@@ -1,7 +1,19 @@
+link(rel="stylesheet" href="../../libs/bootstrap/bootstrap-grid-3.3.1.min.css")
+link(rel="stylesheet" href="../../css/reset.css")
 link(rel="stylesheet" href="style.css")
 
-mixin ulli(txt, color)
- ul(class="ul-" + color)
-  for item in txt  		 
-   li=item
-+ulli(["A 7 day advance notice.", "A minimum of a 7 day booking.", "Full payment of the escort’s services is required in advance.", "All travel costs for the escort is paid by the client. (From and back to Thailand)", "All visa processing costs (if any) are paid by the client in advance.", "International rate per day is 20,000 THB.", "International areas serviced are: China, Hong Kong, Japan, Vietnam, Cambodia, Singapore, Malaysia, Indonesia and Laos."], "red")
+div.container
+    mixin ulli(txt, color)
+        ul(class="ul-" + color)
+            for item in txt        
+                li=item
+    +ulli(["A 7 day advance notice.", "A minimum of a 7 day booking.", "Full payment of the escort’s services is required in advance.", "All travel costs for the escort is paid by the client. (From and back to Thailand)", "All visa processing costs (if any) are paid by the client in advance.", "International rate per day is 20,000 THB.", "International areas serviced are: China, Hong Kong, Japan, Vietnam, Cambodia, Singapore, Malaysia, Indonesia and Laos."], "red")
+
+    +ulli(["A Minimum of a 72 Hour Pre-Booking Notice is Required", "A security deposit via PayPal, Bitcoin, Etherium, Dash or another cryptocurrency is required for VIP airport pickups", "A Minimum of a 24 Hour Booking is Required "], "pink")
+
+
+
+
+      
+
+      
