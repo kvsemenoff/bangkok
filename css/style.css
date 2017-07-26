@@ -22,4 +22,18 @@ body {
   line-height: 18px;
   background: #131313; }
 
+.content-part p {
+  margin-bottom: 20px; }
+.content-part i {
+  font-style: italic;
+  color: #ff9c9c; }
+.content-part a {
+  color: #ff9c9c;
+  font-weight: bold;
+  text-decoration: none; }
+  .content-part a:hover {
+    text-decoration: underline; }
+.content-part b, .content-part strong {
+  color: #f49595; }
+
 /*# sourceMappingURL=style.css.map */

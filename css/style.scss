@@ -25,3 +25,23 @@ body{
 	line-height: 18px;
 	background: #131313;
 }
+.content-part{
+	p{
+		margin-bottom: 20px;
+	}
+	i{
+		font-style: italic;
+		color: #ff9c9c;
+	}
+	a{
+		color: #ff9c9c;
+		font-weight: bold;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	b, strong{
+		color: #f49595;
+	}
+}
