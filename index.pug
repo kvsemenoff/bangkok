@@ -4,22 +4,11 @@ html(lang="ru-RU")
 		meta(charset="UTF-8")
 		meta(name="viewport" , content="width=device-width, initial-scale=1")
 		title Главная
-		link(rel="shortcut icon", href="favicon.png")
-		link(rel="stylesheet", href="css/libs.min.css")
-		link(rel="stylesheet", href="css/style.css")
-		link(rel="stylesheet", href="css/fonts.css")
+		include includes/links.pug
 	body
 		div.wrapper
 			div.content
 				div.header
-					- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
-					ul.main-menu
-					for item in menulist
-						li
-							a(href="#")=item
+					include includes/header.pug
 			div.footer
-						li=item
-
-			div.footer
-				div.block
-					h1 заголвоок
+				include includes/footer.pug
