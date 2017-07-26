@@ -1,3 +1,4 @@
+
 .header-top
 	.container
 		.row
@@ -58,5 +59,17 @@
 					a(href="#")
 						img(src="img/g1.jpg", alt="")
 
+
+
+	.row
+		.col-sm-12.col-md-6
+			p текст
+		.col-sm-12.col-md-6
+		.clearfix
+- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
+ul.main-menu
+	for item in menulist
+		li
+			a(href="#")=item
 
 

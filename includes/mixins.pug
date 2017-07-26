@@ -4,3 +4,9 @@ mixin SidebarBlock(title, list)
 		for item in list
 			li
 				a(href="#")=item
+mixin ulli(txt, color)
+	ul(class=color)
+		for item in txt
+			li=item
+
+	
