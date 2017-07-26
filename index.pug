@@ -1,3 +1,4 @@
+include includes/mixins.pug
 doctype html
 html(lang="ru-RU")
 	head
@@ -6,9 +7,16 @@ html(lang="ru-RU")
 		title Главная
 		include includes/links.pug
 	body
-		div.wrapper
-			div.content
-				div.header
+		.wrapper
+			.content
+				.header
 					include includes/header.pug
-			div.footer
+				.container
+					.row
+						.col-md-2
+							- var menulist = ["Bangkon eccorts", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
+							+SidebarBlock('Excorts by location', menulist)
+						.col-md-10
+						.col-md-2
+			.footer
 				include includes/footer.pug
