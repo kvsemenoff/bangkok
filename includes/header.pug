@@ -16,7 +16,8 @@
 		.row
 			.col-sm-12.col-md-4
 				.header-middle_box.header-middle_box__left
-					img(class="img-responsive" src="img/logo.png", alt="")
+					a(href="/")
+						img(class="img-responsive" src="img/logo.png", alt="")
 			.col-sm-12.col-md-8
 				.header-middle_box.header-middle_box__right
 					- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
@@ -28,38 +29,12 @@
 
 .header-bottom
 	.container
-		#slider-header
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g1.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g2.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g1.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g2.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g1.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g2.jpg", alt="")
-			.item
-				.item-box
-					a(href="#")
-						img(src="img/g1.jpg", alt="")
-
-
-
-
-
+		.cont-border
+			#slider-header
+				- var imageList = ['g1','g2','g1','g2','g1','g2','g1'];
+				for listItem in imageList
+					.item
+						.item-box
+							a(href="#")
+								img(src='img/'+listItem+'.jpg', alt='')
 

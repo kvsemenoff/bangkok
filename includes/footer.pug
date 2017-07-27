@@ -4,10 +4,26 @@
 	.container
 		.row
 			.col-sm-12.col-md-8
-				- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Booking"];
-				span.footer-copy © 2014 - 2017 ESCORT IN BANGKOK
+				- var menulist = ["Home", "All Ecsorts", "All Girls", "All Ladyboys", "Rates&Services", "Bookings", "Work With Us", "XML Sitemap"];
+				ul.main-menu.main-menu_footer
+						for item in menulist
+							li
+								a(href="#")=item
+				
 			.col-sm-12.col-md-4
+			.clearfix
 
+			.col-sm-12.col-md-8
+				.copy-box
+					span.footer-copy © 2014 - 2017 ESCORT IN BANGKOK
+
+			.col-sm-12.col-md-4
+				.ico-box
+					.ico-box_item
+						img(src="img/p1.png", alt="")
+					.ico-box_item
+						img(src="img/p2.png", alt="")
+				.clearfix
 			.clearfix
 
 
