@@ -204,3 +204,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 		margin-bottom: 29px;
 	}
 }
+.tovar-item_description_underline{
+	position: relative;
+}
+.tovar-item_description_underline:after{
+	position: absolute;
+	content: "";
+	height: 1px;
+	width: 87px;
+	background: #c52323;
+	top: 35px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	
+}

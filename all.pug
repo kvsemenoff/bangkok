@@ -1,0 +1,18 @@
+include includes/mixins.pug
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" , content="width=device-width, initial-scale=1")
+		title All Ecscorts
+		include includes/links.pug
+	body
+		.wrapper
+			.content
+				.header
+					include includes/header.pug
+				.container
+					.row
+						include includes/all_page_part.pug
+			.footer
+				include includes/footer.pug
