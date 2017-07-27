@@ -4,7 +4,7 @@ html(lang="ru-RU")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport" , content="width=device-width, initial-scale=1")
-		title Home
+		title All Ecscorts
 		include includes/links.pug
 	body
 		.wrapper
@@ -13,12 +13,6 @@ html(lang="ru-RU")
 					include includes/header.pug
 				.container
 					.row
-						.col-md-3
-							include includes/left_sidebar.pug
-						.col-md-6
-							.content-part
-								include includes/main_page_part.pug
-						.col-md-3
-							include includes/right_sidebar.pug
+						include includes/all_page_part.pug
 			.footer
 				include includes/footer.pug
