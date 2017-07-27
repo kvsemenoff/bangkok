@@ -29,10 +29,12 @@
 
 .header-bottom
 	.container
-		#slider-header
-			- var imageList = ['g1','g2','g1','g2','g1','g2','g1'];
-			for listItem in imageList
-				.item
-					.item-box
-						a(href="#")
-							img(src='img/'+listItem+'.jpg', alt='')
+		.cont-border
+			#slider-header
+				- var imageList = ['g1','g2','g1','g2','g1','g2','g1'];
+				for listItem in imageList
+					.item
+						.item-box
+							a(href="#")
+								img(src='img/'+listItem+'.jpg', alt='')
+
