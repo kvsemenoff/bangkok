@@ -8,5 +8,9 @@ mixin ulli(txt, color)
 	ul(class=color)
 		for item in txt
 			li=item
-
-	
+mixin HeadLine(headln, forwhat)
+	case forwhat
+		when 0
+			span.common-title.common-title_main=headln
+		default
+			span.common-title=headln

@@ -36,4 +36,37 @@ body {
 .content-part b, .content-part strong {
   color: #f49595; }
 
+.common-title {
+  color: #c52323;
+  font-family: Roboto;
+  text-transform: uppercase; }
+
+.common-title_main {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 37px; }
+  .common-title_main:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #1f1f1f;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    @media screen and (min-width: 992px) {
+      .common-title_main:before {
+        width: 414px; } }
+  .common-title_main:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 135px;
+    background: #c52323;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+
 /*# sourceMappingURL=style.css.map */
