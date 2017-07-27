@@ -46,6 +46,18 @@ body{
 	}
 	b, strong{
 		color: #f49595;
+
+	}
+	.centered{
+		display: block;
+		color: #f49595;
+		text-align: center;
+		text-transform: uppercase;
+
+	}
+	.bold{
+		font-family: Roboto;
+		font-weight: 500;
 	}
 }
 .headline-box{
@@ -89,6 +101,13 @@ body{
 		transform: translate(-50%, 0);
 	}
 	
+}
+.common-title_second{
+	display: block;
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 20px;
 }
 .common-title_sidebar-direct{
 	display: inline-block;

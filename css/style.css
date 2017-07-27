@@ -38,6 +38,14 @@ body {
     text-decoration: underline; }
 .content-part b, .content-part strong {
   color: #f49595; }
+.content-part .centered {
+  display: block;
+  color: #f49595;
+  text-align: center;
+  text-transform: uppercase; }
+.content-part .bold {
+  font-family: Roboto;
+  font-weight: 500; }
 
 .headline-box {
   width: 100%;
@@ -77,6 +85,13 @@ body {
     top: 35px;
     left: 50%;
     transform: translate(-50%, 0); }
+
+.common-title_second {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px; }
 
 .common-title_sidebar-direct {
   display: inline-block;
