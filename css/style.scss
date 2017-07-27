@@ -222,3 +222,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 .tovar-item_padding{
 	margin-bottom: 30px;
 }
+.rate{
+	margin-top: 25px;
+	margin-bottom: 55px;
+	.rate-title{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+		font-family: Roboto;
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	.rate-sub-title{
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		color: #ff9c9c;
+		font-family: Roboto;
+		font-size: 14px;
+		margin-bottom: 25px;
+		margin-top: -20px;
+	}
+	.rate-descr{
+		font-size: 11px;
+		text-align: right;
+		margin-top: 15px;
+	}
+	table{
+		width: 100%;
+		border: 1px solid #1f1f1f;
+		font-family: Roboto;
+
+		td{
+			padding: 15px 18px;
+			border-bottom: 1px solid #1f1f1f;
+		}
+		td:first-child{
+			width: 50%;
+			position: relative;
+			&:before{
+				position: absolute;
+				content: "";
+				width: 1px;
+				height: 27px;
+				background: #1f1f1f;
+				right: 0px;
+				top: 10px;
+			}
+		}
+		td:last-child{
+			width: 50%;
+		}
+		tr:first-child{
+			td{
+				background: #1b1b1b;
+				color: #c52323;
+				font-size: 14px;
+				
+			}
+		}
+	}
+}

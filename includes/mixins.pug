@@ -23,6 +23,18 @@ mixin HeadLine(headln, forwhat)
 mixin tovarItem(image, title, description, underlineTitle,underlineDescription, tovarpadding)
 	if tovarpadding=='false'
 		.tovar-item
+			a(href="#")
+				.tovar-item_imgbox
+					img(src='img/'+image)
+					- var titleVar = title
+				if underlineTitle=='false'
+					span.tovar-item_title !{titleVar}
+				else
+					span.tovar-item_title.tovar-item_title_underline !{titleVar}
+				if underlineDescription=='false'
+					span.tovar-item_description=description
+				else
+					span.tovar-item_description.tovar-item_description_underline=description
 	else
 		.tovar-item.tovar-item_padding
 			a(href="#")
@@ -37,3 +49,17 @@ mixin tovarItem(image, title, description, underlineTitle,underlineDescription, 
 					span.tovar-item_description=description
 				else
 					span.tovar-item_description.tovar-item_description_underline=description
+
+mixin rateTable(list)
+	table
+		each val, key in list
+			tr
+				td=val[0]
+				td=val[1]
+mixin rate(title, subtitle, description, list)
+	.rate
+		span.rate-title=title
+		if subtitle!=''
+			span.rate-sub-title=subtitle
+		+rateTable(list)
+		.rate-descr=description
