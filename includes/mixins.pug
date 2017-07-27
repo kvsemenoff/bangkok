@@ -1,9 +1,11 @@
 mixin SidebarBlock(title, list)
-	span title 
-	ul
+	.headline-box
+		+HeadLine(title, 1)
+	ul.sidebad-menu
 		for item in list
 			li
-				a(href="#")=item
+				a(href="#")
+					span=item
 mixin ulli(txt, color)
 	ul(class=color)
 		for item in txt
@@ -12,5 +14,7 @@ mixin HeadLine(headln, forwhat)
 	case forwhat
 		when 0
 			span.common-title.common-title_main=headln
+		when 1
+			span.common-title.common-title_sidebar-direct=headln
 		default
 			span.common-title=headln
