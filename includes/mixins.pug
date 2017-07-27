@@ -7,9 +7,15 @@ mixin SidebarBlock(title, list, mode)
 				a(href="#")
 					span=item
 mixin ulli(txt, color)
-	ul(class=color)
-		for item in txt
-			li=item
+	if color==''
+		ul
+			for item in txt
+				li=item
+	else
+		ul(class=color)
+			for item in txt
+				li=item	
+
 mixin HeadLine(headln, forwhat)
 	case forwhat
 		when 0

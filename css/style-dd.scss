@@ -97,9 +97,15 @@
 			margin-bottom: 11px;
 			a{
 				font-size:13px;
+				font-family: Roboto;
 				text-transform:none;
 				padding-bottom: 11px;
+				color: #b8b8b8;
 				// border-bottom:2px solid #131313;
+				&:hover{
+					color: #b8b8b8;
+					border-bottom:2px solid #b8b8b8;
+				}
 			}
 		}
 	}
@@ -119,6 +125,7 @@
 	}
 }
 .footer{
+	margin-top: 80px;
 	padding: 15px 0px;
 	background: #0F0F0F;
 	.main-menu_footer{
@@ -141,6 +148,9 @@
 	text-align: center;
 	.footer-copy{
 		font-size: 11px;
+		font-family: Roboto;
+		color: #b8b8b8;
+
 	}
 	@media only screen and (min-width: 992px) {
 		text-align: left;
