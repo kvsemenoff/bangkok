@@ -1,6 +1,6 @@
-mixin SidebarBlock(title, list)
+mixin SidebarBlock(title, list, mode)
 	.headline-box
-		+HeadLine(title, 1)
+		+HeadLine(title, mode)
 	ul.sidebad-menu
 		for item in list
 			li
@@ -16,12 +16,15 @@ mixin HeadLine(headln, forwhat)
 			span.common-title.common-title_main=headln
 		when 1
 			span.common-title.common-title_sidebar-direct=headln
+		when 2
+			span.common-title.common-title_sidebar-direct.common-title_sidebar-traeng=headln
 		default
 			span.common-title=headln
 mixin tovarItem(image, title, description, underline)
 	.tovar-item
-		.tovar-item_imgbox
-			img(src='img/'+image)
-		- var titleVar = title
-		span.tovar-item_title !{titleVar}
-		span.tovar-item_description=description
+		a(href="#")
+			.tovar-item_imgbox
+				img(src='img/'+image)
+				- var titleVar = title
+			span.tovar-item_title !{titleVar}
+			span.tovar-item_description=description
