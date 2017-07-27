@@ -1,6 +1,24 @@
 
 
 $(document).ready(function(){
+	
+	
+	$(".input-box").click(function(){
+		var input = $(this).find("input");
+		$(this).find('span').css('display', 'none');
+		if (input.val() =='') {
+			
+			input.focus();
+		}
+		//alert(input.val());
+		
+	});
+	$('input').blur(function() {
+		if ($(this).val()==""){
+			$(this).parent().find('span').css('display', 'block');
+		}
+		
+	});
 
 	// Бургер 
 	$(".burger").click(function(){
