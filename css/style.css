@@ -112,4 +112,27 @@ body {
       .sidebad-menu li a span {
         padding: 0px 30px 0px 30px; }
 
+.tovar-item {
+  width: 100%;
+  background: #1b1b1b;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 19px; }
+  .tovar-item .tovar-item_imgbox {
+    margin-bottom: 14px; }
+    .tovar-item .tovar-item_imgbox img {
+      width: 100%;
+      height: auto; }
+  .tovar-item .tovar-item_title {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 14px; }
+    .tovar-item .tovar-item_title strong {
+      font-weight: normal;
+      color: #c52323; }
+
 /*# sourceMappingURL=style.css.map */

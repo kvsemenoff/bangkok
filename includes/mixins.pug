@@ -18,3 +18,10 @@ mixin HeadLine(headln, forwhat)
 			span.common-title.common-title_sidebar-direct=headln
 		default
 			span.common-title=headln
+mixin tovarItem(image, title, description, underline)
+	.tovar-item
+		.tovar-item_imgbox
+			img(src='img/'+image)
+		- var titleVar = title
+		span.tovar-item_title !{titleVar}
+		span.tovar-item_description=description
