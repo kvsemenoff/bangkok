@@ -91,6 +91,77 @@ body{
 			}
 		}
 	}
+	q{
+		display: block;
+		border-left: 1px solid #c52323;
+		padding: 8px 19px;
+		margin-bottom: 20px;
+	}
+	.filled{
+		color: #f49595;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.phone-text{
+		display: block;
+		margin-bottom: 15px;
+		position: relative;
+		padding-left: 20px;
+		padding-top: 1px;
+		font-size: 15px;
+		span{
+			font-size: 18px;
+		}
+		&:before{
+			position: absolute;
+			content: "";
+			height: 13px;
+			width: 9px;
+			background: url(../img/phone.png) no-repeat top center;
+			left: 0px;
+			top: 5px;
+		}
+	}
+	.email-text{
+		display: block;
+		margin-bottom: 15px;
+		position: relative;
+		padding-left: 20px;
+		padding-top: 1px;
+		font-size: 18px;
+		color: #f0f0f0;
+		&:before{
+			position: absolute;
+			content: "";
+			height: 11px;
+			width: 13px;
+			background: url(../img/email.png) no-repeat top center;
+			left: 0px;
+			top: 5px;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.address-text{
+		display: block;
+		margin-bottom: 15px;
+		position: relative;
+		padding-left: 20px;
+		padding-top: 1px;
+		font-size: 18px;
+		color: #f0f0f0;
+		&:before{
+			position: absolute;
+			content: "";
+			height: 14px;
+			width: 13px;
+			background: url(../img/address.png) no-repeat top center;
+			left: 0px;
+			top: 5px;
+		}
+	}
 }
 .headline-box{
 	width: 100%;
@@ -109,6 +180,7 @@ body{
 	font-size: 20px;
 	text-align: center;
 	padding-bottom: 37px;
+	margin-top: 40px;
 	&:before{
 		position: absolute;
 		content: "";
@@ -196,6 +268,7 @@ body{
 		}
 	}
 }
+
 .tovar-item{
 	width: 100%;
 	background: #1b1b1b;
@@ -208,6 +281,10 @@ body{
 	transition:0.5s;
 	a{
 		color: #fff;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 	.tovar-item_imgbox{
 		z-index: 4;
@@ -336,5 +413,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
 				
 			}
 		}
+	}
+}
+.center{
+	text-align: center;
+}
+.button{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 36px;
+	font-family: Roboto;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #c52323 !important;
+	border: 1px solid #c52323;
+	border-radius: 4px;
+	margin-top: 26px;
+	margin-bottom: 40px;
+	&:hover{
+		color: #e7e7e7  !important;
+		border-radius: 4px;
+		border: 1px solid #e7e7e7;
+		text-decoration: none !important;
 	}
 }

@@ -69,6 +69,67 @@ body {
   color: #ff9c9c; }
   .content-part ul.select-list li:after {
     border: 1px solid #ff9c9c; }
+.content-part q {
+  display: block;
+  border-left: 1px solid #c52323;
+  padding: 8px 19px;
+  margin-bottom: 20px; }
+.content-part .filled {
+  color: #f49595;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px; }
+.content-part .phone-text {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 1px;
+  font-size: 15px; }
+  .content-part .phone-text span {
+    font-size: 18px; }
+  .content-part .phone-text:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 9px;
+    background: url(../img/phone.png) no-repeat top center;
+    left: 0px;
+    top: 5px; }
+.content-part .email-text {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 1px;
+  font-size: 18px;
+  color: #f0f0f0; }
+  .content-part .email-text:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 13px;
+    background: url(../img/email.png) no-repeat top center;
+    left: 0px;
+    top: 5px; }
+  .content-part .email-text:hover {
+    text-decoration: underline; }
+.content-part .address-text {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 1px;
+  font-size: 18px;
+  color: #f0f0f0; }
+  .content-part .address-text:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 13px;
+    background: url(../img/address.png) no-repeat top center;
+    left: 0px;
+    top: 5px; }
 
 .headline-box {
   width: 100%;
@@ -86,7 +147,8 @@ body {
   position: relative;
   font-size: 20px;
   text-align: center;
-  padding-bottom: 37px; }
+  padding-bottom: 37px;
+  margin-top: 40px; }
   .common-title_main:before {
     position: absolute;
     content: "";
@@ -176,7 +238,10 @@ body {
   margin-bottom: 19px;
   transition: 0.5s; }
   .tovar-item a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
+    .tovar-item a:hover {
+      text-decoration: none; }
   .tovar-item .tovar-item_imgbox {
     z-index: 4;
     margin-bottom: 14px; }
@@ -279,5 +344,27 @@ body {
       background: #1b1b1b;
       color: #c52323;
       font-size: 14px; }
+
+.center {
+  text-align: center; }
+
+.button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 36px;
+  font-family: Roboto;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c52323 !important;
+  border: 1px solid #c52323;
+  border-radius: 4px;
+  margin-top: 26px;
+  margin-bottom: 40px; }
+  .button:hover {
+    color: #e7e7e7  !important;
+    border-radius: 4px;
+    border: 1px solid #e7e7e7;
+    text-decoration: none !important; }
 
 /*# sourceMappingURL=style.css.map */
