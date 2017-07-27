@@ -187,4 +187,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0); }
 
+.tovar-item_padding {
+  margin-bottom: 30px; }
+
 /*# sourceMappingURL=style.css.map */
